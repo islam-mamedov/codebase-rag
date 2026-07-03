@@ -62,7 +62,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("question")
     parser.add_argument("--k", type=int, default=TOP_K)
-    parser.add_argument("--mode", default="hybrid_rerank",
+    parser.add_argument("--mode", default="dense",
                         choices=["dense", "hybrid", "hybrid_rerank", "dense_rerank"])
     parser.add_argument("--show-chunks", action="store_true",
                         help="print retrieved chunks (debugging/learning)")

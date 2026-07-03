@@ -79,13 +79,12 @@ def _bm25_ids(question: str, n: int) -> list[str]:
     return [_chunk_ids[i] for i in ranked[:n]]
 
 
-def _rrf_fuse(rankings: list[list[str]]) -> list[str]:
-    """Merge multiple ranked lists: score(id) = sum over lists of
-    1/(RRF_K + rank). Ids high in ANY list surface; high in BOTH win."""
+def _rrf_fuse(rankings: list[list[str]], weights: tuple) -> list[str]:
+    """Weighted RRF: score(id) = sum of w/(RRF_K + rank) over lists."""
     scores: dict[str, float] = {}
-    for ranking in rankings:
+    for ranking, w in zip(rankings, weights):
         for rank, cid in enumerate(ranking, 1):
-            scores[cid] = scores.get(cid, 0.0) + 1.0 / (RRF_K + rank)
+            scores[cid] = scores.get(cid, 0.0) + w / (RRF_K + rank)
     return sorted(scores, key=scores.get, reverse=True)
 
 
@@ -116,7 +115,8 @@ def retrieve(question: str, k: int = 5, mode: str = "dense") -> list[dict]:
         ids = _rerank(question, _dense_ids(question, CANDIDATES))[:k]
     elif mode in ("hybrid", "hybrid_rerank"):
         fused = _rrf_fuse([_dense_ids(question, CANDIDATES),
-                           _bm25_ids(question, CANDIDATES)])
+                                _bm25_ids(question, CANDIDATES)],
+                                weights=(2.0, 1.0))
         candidates = fused[:CANDIDATES]
         if mode == "hybrid_rerank":
             candidates = _rerank(question, candidates)
