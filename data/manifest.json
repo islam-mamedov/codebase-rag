@@ -1,0 +1,1908 @@
+{
+  "repo": "fastapi/fastapi",
+  "ingested_at": "2026-07-03T07:56:26.690336+00:00",
+  "files": [
+    {
+      "source_type": "doc",
+      "path": "README.md",
+      "size_bytes": 23110
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/_llm-test.md",
+      "size_bytes": 11247
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/about/index.md",
+      "size_bytes": 74
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/additional-responses.md",
+      "size_bytes": 9055
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/additional-status-codes.md",
+      "size_bytes": 2002
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/advanced-dependencies.md",
+      "size_bytes": 9249
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/advanced-python-types.md",
+      "size_bytes": 2091
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/async-tests.md",
+      "size_bytes": 3866
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/behind-a-proxy.md",
+      "size_bytes": 16177
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/custom-response.md",
+      "size_bytes": 11291
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/dataclasses.md",
+      "size_bytes": 4080
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/events.md",
+      "size_bytes": 7989
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/generate-clients.md",
+      "size_bytes": 8697
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/index.md",
+      "size_bytes": 757
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/json-base64-bytes.md",
+      "size_bytes": 2474
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/middleware.md",
+      "size_bytes": 4206
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/openapi-callbacks.md",
+      "size_bytes": 7841
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/openapi-webhooks.md",
+      "size_bytes": 2948
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/path-operation-advanced-configuration.md",
+      "size_bytes": 7120
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/response-change-status-code.md",
+      "size_bytes": 1558
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/response-cookies.md",
+      "size_bytes": 2232
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/response-directly.md",
+      "size_bytes": 4137
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/response-headers.md",
+      "size_bytes": 2204
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/security/http-basic-auth.md",
+      "size_bytes": 5118
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/security/index.md",
+      "size_bytes": 648
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/security/oauth2-scopes.md",
+      "size_bytes": 13769
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/settings.md",
+      "size_bytes": 11145
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/stream-data.md",
+      "size_bytes": 5500
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/strict-content-type.md",
+      "size_bytes": 3292
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/sub-applications.md",
+      "size_bytes": 2949
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/templates.md",
+      "size_bytes": 3503
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/testing-dependencies.md",
+      "size_bytes": 2413
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/testing-events.md",
+      "size_bytes": 628
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/testing-websockets.md",
+      "size_bytes": 411
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/using-request-directly.md",
+      "size_bytes": 2344
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/websockets.md",
+      "size_bytes": 5472
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/advanced/wsgi.md",
+      "size_bytes": 1470
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/alternatives.md",
+      "size_bytes": 22680
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/async.md",
+      "size_bytes": 23978
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/benchmarks.md",
+      "size_bytes": 3503
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/contributing.md",
+      "size_bytes": 271
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/cloud.md",
+      "size_bytes": 1203
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/concepts.md",
+      "size_bytes": 18936
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/docker.md",
+      "size_bytes": 29005
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/fastapicloud.md",
+      "size_bytes": 1750
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/https.md",
+      "size_bytes": 14304
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/index.md",
+      "size_bytes": 1520
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/manually.md",
+      "size_bytes": 6707
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/server-workers.md",
+      "size_bytes": 8372
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/deployment/versions.md",
+      "size_bytes": 3510
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/editor-support.md",
+      "size_bytes": 2516
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/environment-variables.md",
+      "size_bytes": 8113
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/external-links.md",
+      "size_bytes": 926
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/fastapi-cli.md",
+      "size_bytes": 6185
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/fastapi-people.md",
+      "size_bytes": 9274
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/features.md",
+      "size_bytes": 9143
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/help-fastapi.md",
+      "size_bytes": 3818
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/history-design-future.md",
+      "size_bytes": 4090
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/authentication-error-status-code.md",
+      "size_bytes": 1190
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/conditional-openapi.md",
+      "size_bytes": 2436
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/configure-swagger-ui.md",
+      "size_bytes": 2891
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/custom-docs-ui-assets.md",
+      "size_bytes": 7693
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/custom-request-and-route.md",
+      "size_bytes": 4556
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/extending-openapi.md",
+      "size_bytes": 3742
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/general.md",
+      "size_bytes": 2834
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/graphql.md",
+      "size_bytes": 2770
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/index.md",
+      "size_bytes": 582
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/migrate-from-pydantic-v1-to-pydantic-v2.md",
+      "size_bytes": 6300
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/separate-openapi-schemas.md",
+      "size_bytes": 4656
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/how-to/testing-database.md",
+      "size_bytes": 393
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/index.md",
+      "size_bytes": 25405
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/learn/index.md",
+      "size_bytes": 206
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/management.md",
+      "size_bytes": 968
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/newsletter.md",
+      "size_bytes": 326
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/project-generation.md",
+      "size_bytes": 1998
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/python-types.md",
+      "size_bytes": 11214
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/apirouter.md",
+      "size_bytes": 547
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/background.md",
+      "size_bytes": 377
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/dependencies.md",
+      "size_bytes": 671
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/encoders.md",
+      "size_bytes": 71
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/exceptions.md",
+      "size_bytes": 597
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/fastapi.md",
+      "size_bytes": 724
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/httpconnection.md",
+      "size_bytes": 359
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/index.md",
+      "size_bytes": 285
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/middleware.md",
+      "size_bytes": 845
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/openapi/docs.md",
+      "size_bytes": 360
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/openapi/index.md",
+      "size_bytes": 158
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/openapi/models.md",
+      "size_bytes": 125
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/parameters.md",
+      "size_bytes": 603
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/request.md",
+      "size_bytes": 652
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/response.md",
+      "size_bytes": 559
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/responses.md",
+      "size_bytes": 4546
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/security/index.md",
+      "size_bytes": 1778
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/staticfiles.md",
+      "size_bytes": 391
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/status.md",
+      "size_bytes": 861
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/templating.md",
+      "size_bytes": 365
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/testclient.md",
+      "size_bytes": 450
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/uploadfile.md",
+      "size_bytes": 472
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/reference/websockets.md",
+      "size_bytes": 2007
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/resources/index.md",
+      "size_bytes": 83
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/translation-banner.md",
+      "size_bytes": 379
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/translations.md",
+      "size_bytes": 1982
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/background-tasks.md",
+      "size_bytes": 4794
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/bigger-applications.md",
+      "size_bytes": 20384
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/body-fields.md",
+      "size_bytes": 2388
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/body-multiple-params.md",
+      "size_bytes": 4932
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/body-nested-models.md",
+      "size_bytes": 6807
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/body-updates.md",
+      "size_bytes": 4091
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/body.md",
+      "size_bytes": 6611
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/cookie-param-models.md",
+      "size_bytes": 3141
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/cookie-params.md",
+      "size_bytes": 1602
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/cors.md",
+      "size_bytes": 5370
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/debugging.md",
+      "size_bytes": 2456
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/dependencies/classes-as-dependencies.md",
+      "size_bytes": 6915
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md",
+      "size_bytes": 2954
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/dependencies/dependencies-with-yield.md",
+      "size_bytes": 12857
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/dependencies/global-dependencies.md",
+      "size_bytes": 1060
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/dependencies/index.md",
+      "size_bytes": 9771
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/dependencies/sub-dependencies.md",
+      "size_bytes": 3820
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/encoder.md",
+      "size_bytes": 1608
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/extra-data-types.md",
+      "size_bytes": 2674
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/extra-models.md",
+      "size_bytes": 6881
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/first-steps.md",
+      "size_bytes": 13757
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/frontend.md",
+      "size_bytes": 5742
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/handling-errors.md",
+      "size_bytes": 9160
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/header-param-models.md",
+      "size_bytes": 2679
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/header-params.md",
+      "size_bytes": 3032
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/index.md",
+      "size_bytes": 5414
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/metadata.md",
+      "size_bytes": 5974
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/middleware.md",
+      "size_bytes": 3955
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/path-operation-configuration.md",
+      "size_bytes": 4121
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/path-params-numeric-validations.md",
+      "size_bytes": 6208
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/path-params.md",
+      "size_bytes": 9043
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/query-param-models.md",
+      "size_bytes": 2224
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/query-params-str-validations.md",
+      "size_bytes": 16640
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/query-params.md",
+      "size_bytes": 4596
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/request-files.md",
+      "size_bytes": 7182
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/request-form-models.md",
+      "size_bytes": 2157
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/request-forms-and-files.md",
+      "size_bytes": 1454
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/request-forms.md",
+      "size_bytes": 2626
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/response-model.md",
+      "size_bytes": 15876
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/response-status-code.md",
+      "size_bytes": 3994
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/schema-extra-example.md",
+      "size_bytes": 8950
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/security/first-steps.md",
+      "size_bytes": 8452
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/security/get-current-user.md",
+      "size_bytes": 4117
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/security/index.md",
+      "size_bytes": 4548
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/security/oauth2-jwt.md",
+      "size_bytes": 10944
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/security/simple-oauth2.md",
+      "size_bytes": 9589
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/server-sent-events.md",
+      "size_bytes": 4704
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/sql-databases.md",
+      "size_bytes": 15705
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/static-files.md",
+      "size_bytes": 1925
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/stream-json-lines.md",
+      "size_bytes": 4452
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/tutorial/testing.md",
+      "size_bytes": 5825
+    },
+    {
+      "source_type": "doc",
+      "path": "docs/en/docs/virtual-environments.md",
+      "size_bytes": 22668
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/SKILL.md",
+      "size_bytes": 10111
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/references/dependencies.md",
+      "size_bytes": 3268
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/references/other-tools.md",
+      "size_bytes": 1527
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/references/path-operations.md",
+      "size_bytes": 1583
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/references/pydantic.md",
+      "size_bytes": 1844
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/references/responses.md",
+      "size_bytes": 1856
+    },
+    {
+      "source_type": "doc",
+      "path": "fastapi/.agents/skills/fastapi/references/streaming.md",
+      "size_bytes": 2581
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/__init__.py",
+      "size_bytes": 1081
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/__main__.py",
+      "size_bytes": 37
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/_compat/__init__.py",
+      "size_bytes": 2095
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/_compat/shared.py",
+      "size_bytes": 7118
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/_compat/v2.py",
+      "size_bytes": 17601
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/background.py",
+      "size_bytes": 1820
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/cli.py",
+      "size_bytes": 418
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/concurrency.py",
+      "size_bytes": 1489
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/datastructures.py",
+      "size_bytes": 5321
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/dependencies/models.py",
+      "size_bytes": 7250
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/dependencies/utils.py",
+      "size_bytes": 39728
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/encoders.py",
+      "size_bytes": 11603
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/exception_handlers.py",
+      "size_bytes": 1275
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/exceptions.py",
+      "size_bytes": 7453
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/logger.py",
+      "size_bytes": 54
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/__init__.py",
+      "size_bytes": 58
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/asyncexitstack.py",
+      "size_bytes": 637
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/cors.py",
+      "size_bytes": 79
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/gzip.py",
+      "size_bytes": 79
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/httpsredirect.py",
+      "size_bytes": 115
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/trustedhost.py",
+      "size_bytes": 109
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/middleware/wsgi.py",
+      "size_bytes": 107
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/openapi/constants.py",
+      "size_bytes": 153
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/openapi/docs.py",
+      "size_bytes": 12425
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/openapi/models.py",
+      "size_bytes": 14608
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/openapi/utils.py",
+      "size_bytes": 26916
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/param_functions.py",
+      "size_bytes": 69596
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/params.py",
+      "size_bytes": 26205
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/requests.py",
+      "size_bytes": 142
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/responses.py",
+      "size_bytes": 4144
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/__init__.py",
+      "size_bytes": 881
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/api_key.py",
+      "size_bytes": 9793
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/base.py",
+      "size_bytes": 141
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/http.py",
+      "size_bytes": 13410
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/oauth2.py",
+      "size_bytes": 24178
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/open_id_connect_url.py",
+      "size_bytes": 3136
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/security/utils.py",
+      "size_bytes": 261
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/sse.py",
+      "size_bytes": 6848
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/staticfiles.py",
+      "size_bytes": 69
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/templating.py",
+      "size_bytes": 76
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/testclient.py",
+      "size_bytes": 66
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/types.py",
+      "size_bytes": 438
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/utils.py",
+      "size_bytes": 4341
+    },
+    {
+      "source_type": "code",
+      "path": "fastapi/websockets.py",
+      "size_bytes": 222
+    }
+  ],
+  "issues": [
+    {
+      "source_type": "issue",
+      "path": "issues/617.json",
+      "url": "https://github.com/fastapi/fastapi/issues/617"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/142.json",
+      "url": "https://github.com/fastapi/fastapi/issues/142"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10857.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10857"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11143.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11143"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12133.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12133"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/754.json",
+      "url": "https://github.com/fastapi/fastapi/issues/754"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11573.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11573"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13399.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13399"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12965.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12965"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12554.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12554"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/1773.json",
+      "url": "https://github.com/fastapi/fastapi/issues/1773"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13533.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13533"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10007.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10007"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/1273.json",
+      "url": "https://github.com/fastapi/fastapi/issues/1273"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/190.json",
+      "url": "https://github.com/fastapi/fastapi/issues/190"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10180.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10180"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/4939.json",
+      "url": "https://github.com/fastapi/fastapi/issues/4939"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12402.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12402"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13056.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13056"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/3920.json",
+      "url": "https://github.com/fastapi/fastapi/issues/3920"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13400.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13400"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12313.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12313"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10360.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10360"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/3163.json",
+      "url": "https://github.com/fastapi/fastapi/issues/3163"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12419.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12419"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/2008.json",
+      "url": "https://github.com/fastapi/fastapi/issues/2008"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/9424.json",
+      "url": "https://github.com/fastapi/fastapi/issues/9424"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/1476.json",
+      "url": "https://github.com/fastapi/fastapi/issues/1476"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14128.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14128"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10177.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10177"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13880.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13880"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12245.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12245"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11037.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11037"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/608.json",
+      "url": "https://github.com/fastapi/fastapi/issues/608"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/501.json",
+      "url": "https://github.com/fastapi/fastapi/issues/501"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10999.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10999"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10286.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10286"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10259.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10259"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12198.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12198"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10424.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10424"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/3500.json",
+      "url": "https://github.com/fastapi/fastapi/issues/3500"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/639.json",
+      "url": "https://github.com/fastapi/fastapi/issues/639"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11134.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11134"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10719.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10719"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10236.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10236"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15612.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15612"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15401.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15401"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13471.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13471"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13067.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13067"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11215.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11215"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10787.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10787"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10322.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10322"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/3317.json",
+      "url": "https://github.com/fastapi/fastapi/issues/3317"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13175.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13175"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13150.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13150"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12459.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12459"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/5060.json",
+      "url": "https://github.com/fastapi/fastapi/issues/5060"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14221.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14221"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12426.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12426"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12246.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12246"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11251.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11251"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10998.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10998"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10997.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10997"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10720.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10720"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/10127.json",
+      "url": "https://github.com/fastapi/fastapi/issues/10127"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/1204.json",
+      "url": "https://github.com/fastapi/fastapi/issues/1204"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14680.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14680"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12240.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12240"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12239.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12239"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/54.json",
+      "url": "https://github.com/fastapi/fastapi/issues/54"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15845.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15845"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15503.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15503"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14454.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14454"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13019.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13019"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11892.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11892"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/5642.json",
+      "url": "https://github.com/fastapi/fastapi/issues/5642"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/1131.json",
+      "url": "https://github.com/fastapi/fastapi/issues/1131"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15448.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15448"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15188.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15188"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14888.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14888"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14344.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14344"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13606.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13606"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13440.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13440"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13116.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13116"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13022.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13022"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12780.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12780"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12055.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12055"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11580.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11580"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15764.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15764"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15762.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15762"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15716.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15716"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15715.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15715"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15714.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15714"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15713.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15713"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15712.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15712"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15268.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15268"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15118.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15118"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14810.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14810"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14508.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14508"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14496.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14496"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14484.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14484"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14483.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14483"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14467.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14467"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14466.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14466"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14465.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14465"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14444.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14444"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14431.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14431"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14316.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14316"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14271.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14271"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14247.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14247"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13111.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13111"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12901.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12901"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12323.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12323"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12290.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12290"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12017.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12017"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11993.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11993"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11873.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11873"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15855.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15855"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15844.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15844"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15738.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15738"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15680.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15680"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15578.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15578"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15538.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15538"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15535.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15535"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15466.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15466"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15325.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15325"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15324.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15324"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15322.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15322"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15238.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15238"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15237.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15237"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15236.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15236"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15197.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15197"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15138.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15138"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15111.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15111"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15085.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15085"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15049.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15049"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15002.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15002"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/15000.json",
+      "url": "https://github.com/fastapi/fastapi/issues/15000"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14989.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14989"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14988.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14988"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14787.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14787"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14503.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14503"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14502.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14502"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14501.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14501"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14500.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14500"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14499.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14499"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14498.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14498"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14497.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14497"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14494.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14494"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14493.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14493"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14312.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14312"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14225.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14225"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14199.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14199"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14114.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14114"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14078.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14078"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/14010.json",
+      "url": "https://github.com/fastapi/fastapi/issues/14010"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13839.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13839"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13715.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13715"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13316.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13316"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13119.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13119"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/13023.json",
+      "url": "https://github.com/fastapi/fastapi/issues/13023"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12987.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12987"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12963.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12963"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12936.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12936"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12924.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12924"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12765.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12765"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12497.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12497"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12425.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12425"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12382.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12382"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12111.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12111"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12039.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12039"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/12010.json",
+      "url": "https://github.com/fastapi/fastapi/issues/12010"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11989.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11989"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11941.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11941"
+    },
+    {
+      "source_type": "issue",
+      "path": "issues/11812.json",
+      "url": "https://github.com/fastapi/fastapi/issues/11812"
+    }
+  ]
+}
