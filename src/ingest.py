@@ -16,7 +16,7 @@ SKIP_DIRS = {".git", ".github", "__pycache__", "node_modules", "tests", "test",
              "scripts"}
 CODE_EXTS = {".py"}
 DOC_EXTS = {".md"}
-MAX_FILE_BYTES = 100_000   # skip generated/vendored monsters
+MAX_FILE_BYTES = 400_000   # skip generated/vendored monsters
 ISSUE_LOOKBACK_DAYS = 730  # ~2 years
  
  

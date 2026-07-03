@@ -1,0 +1,42 @@
+{"question": "How do I set a custom status code for an endpoint?", "category": "api_usage", "answerable": true, "gold": ["response-status-code.md", "additional-status-codes.md"]}
+{"question": "How do I receive an uploaded file in an endpoint?", "category": "api_usage", "answerable": true, "gold": ["request-files.md"]}
+{"question": "How do I run a task in the background after returning a response?", "category": "api_usage", "answerable": true, "gold": ["background-tasks.md", "background.py"]}
+{"question": "How do I enable CORS so my frontend can call the API?", "category": "api_usage", "answerable": true, "gold": ["cors.md"]}
+{"question": "How do I declare optional query parameters with default values?", "category": "api_usage", "answerable": true, "gold": ["query-params.md"]}
+{"question": "How do I declare a path parameter with a type like int?", "category": "api_usage", "answerable": true, "gold": ["path-params.md"]}
+{"question": "How do I receive a JSON request body using a Pydantic model?", "category": "api_usage", "answerable": true, "gold": ["tutorial/body.md"]}
+{"question": "How do I receive form data instead of JSON?", "category": "api_usage", "answerable": true, "gold": ["request-forms.md"]}
+{"question": "How do I return a custom error response with a specific status code and message?", "category": "api_usage", "answerable": true, "gold": ["handling-errors.md"]}
+{"question": "How do I use response_model to control which fields are returned?", "category": "api_usage", "answerable": true, "gold": ["response-model.md"]}
+{"question": "How do I serve static files like images or CSS?", "category": "api_usage", "answerable": true, "gold": ["static-files.md", "staticfiles.py"]}
+{"question": "How do I write tests for my FastAPI endpoints?", "category": "api_usage", "answerable": true, "gold": ["tutorial/testing.md", "testclient.py"]}
+{"question": "How do I use WebSockets in FastAPI?", "category": "api_usage", "answerable": true, "gold": ["websockets.md"]}
+{"question": "How do I set a cookie in a response?", "category": "api_usage", "answerable": true, "gold": ["response-cookies.md"]}
+{"question": "How do I add custom headers to a response?", "category": "api_usage", "answerable": true, "gold": ["response-headers.md"]}
+{"question": "How do I implement JWT token authentication?", "category": "api_usage", "answerable": true, "gold": ["oauth2-jwt.md"]}
+{"question": "How does FastAPI's dependency injection system work?", "category": "behavior", "answerable": true, "gold": ["dependencies/index.md"]}
+{"question": "What does jsonable_encoder do and when do I need it?", "category": "behavior", "answerable": true, "gold": ["encoder.md", "encoders.py"]}
+{"question": "What is the difference between async def and def endpoints?", "category": "behavior", "answerable": true, "gold": ["async.md"]}
+{"question": "How can a dependency run cleanup code after the response is sent?", "category": "behavior", "answerable": true, "gold": ["dependencies-with-yield.md"]}
+{"question": "How can I customize or extend the generated OpenAPI schema?", "category": "behavior", "answerable": true, "gold": ["extending-openapi.md"]}
+{"question": "What error does FastAPI return when request validation fails, and how do I customize it?", "category": "behavior", "answerable": true, "gold": ["handling-errors.md", "exceptions.py"]}
+{"question": "How does the OAuth2 password flow work in FastAPI?", "category": "behavior", "answerable": true, "gold": ["security/first-steps.md", "simple-oauth2.md"]}
+{"question": "How do I run code on application startup and shutdown?", "category": "behavior", "answerable": true, "gold": ["events.md"]}
+{"question": "Can I mount another application under a path prefix?", "category": "behavior", "answerable": true, "gold": ["sub-applications.md"]}
+{"question": "How does FastAPI run regular def endpoints without blocking the event loop?", "category": "behavior", "answerable": true, "gold": ["async.md", "concurrency.py"]}
+{"question": "How do I manage configuration and settings with environment variables?", "category": "behavior", "answerable": true, "gold": ["settings.md"]}
+{"question": "Where is the APIRouter class defined?", "category": "location", "answerable": true, "gold": ["fastapi/routing.py"]}
+{"question": "Where is the OAuth2PasswordBearer class implemented?", "category": "location", "answerable": true, "gold": ["fastapi/security/oauth2.py"]}
+{"question": "Where is the jsonable_encoder function implemented?", "category": "location", "answerable": true, "gold": ["fastapi/encoders.py"]}
+{"question": "Where is the BackgroundTasks class defined?", "category": "location", "answerable": true, "gold": ["fastapi/background.py"]}
+{"question": "Where is FastAPI's HTTPException defined?", "category": "location", "answerable": true, "gold": ["fastapi/exceptions.py"]}
+{"question": "Where is the main FastAPI application class defined?", "category": "location", "answerable": true, "gold": ["fastapi/applications.py"]}
+{"question": "Where are the Query, Path, and Body parameter functions defined?", "category": "location", "answerable": true, "gold": ["fastapi/param_functions.py"]}
+{"question": "Where is the TestClient that FastAPI provides for testing?", "category": "location", "answerable": true, "gold": ["fastapi/testclient.py"]}
+{"question": "How do I connect FastAPI to MongoDB?", "category": "unanswerable", "answerable": false, "gold": []}
+{"question": "Does FastAPI have built-in rate limiting?", "category": "unanswerable", "answerable": false, "gold": []}
+{"question": "How do I integrate Celery task queues with FastAPI?", "category": "unanswerable", "answerable": false, "gold": []}
+{"question": "How do I use FastAPI with the Django ORM?", "category": "unanswerable", "answerable": false, "gold": []}
+{"question": "Does FastAPI include a built-in admin dashboard?", "category": "unanswerable", "answerable": false, "gold": []}
+{"question": "How do I schedule recurring cron jobs inside FastAPI?", "category": "unanswerable", "answerable": false, "gold": []}
+{"question": "Does FastAPI have built-in database migration support?", "category": "unanswerable", "answerable": false, "gold": []}
