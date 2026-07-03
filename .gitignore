@@ -1,0 +1,6 @@
+.venv/
+data/repo/
+data/issues/
+data/chroma/
+__pycache__/
+.pytest_cache/
