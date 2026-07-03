@@ -58,7 +58,7 @@ def build_prompt(question: str, hits: list[dict]) -> str:
     parts = []
     for i, h in enumerate(hits, 1):
         parts.append(f"[{i}] ({h['meta']['source_type']}: "
-                     f"{h['meta']['path']})\n{h['text']}")
+                            f"{h['meta']['path']})\n{h['text'][:2500]}")
     context = "\n\n---\n\n".join(parts)
     return f"Context chunks:\n\n{context}\n\nQuestion: {question}"
 

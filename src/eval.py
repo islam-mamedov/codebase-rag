@@ -33,7 +33,7 @@ EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 K = 5
 REFUSAL_TEXT = "I couldn't find this in the indexed codebase"
-SLEEP_BETWEEN_LLM_CALLS = 2  # stay under free-tier rate limits
+SLEEP_BETWEEN_LLM_CALLS = 5  # stay under free-tier rate limits
 
 JUDGE_PROMPT = """\
 You are grading a RAG system's answer. Given the question, the context the
@@ -126,18 +126,27 @@ def main() -> None:
     llm_model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 
     def llm(prompt: str, system: str | None = None) -> str:
-        key = cache_key(llm_model, system or "", prompt)
-        if key in cache:
-            return cache[key]
-        messages = ([{"role": "system", "content": system}] if system else [])
-        messages.append({"role": "user", "content": prompt})
-        out = client.chat.completions.create(
-            model=llm_model, messages=messages,
-            temperature=0.1).choices[0].message.content
-        cache[key] = out
-        save_cache(cache)
-        time.sleep(SLEEP_BETWEEN_LLM_CALLS)
-        return out
+            key = cache_key(llm_model, system or "", prompt)
+            if key in cache:
+                return cache[key]
+            messages = ([{"role": "system", "content": system}] if system else [])
+            messages.append({"role": "user", "content": prompt})
+            out = None
+            for attempt in range(4):
+                try:
+                    out = client.chat.completions.create(
+                        model=llm_model, messages=messages,
+                        temperature=0.1).choices[0].message.content
+                    break
+                except Exception as e:
+                    print(f"  [retry {attempt + 1}/4] {str(e)[:200]}; waiting 30s")
+                    time.sleep(30)
+            if out is None:
+                raise RuntimeError("LLM call failed 4 times; try again later")
+            cache[key] = out
+            save_cache(cache)
+            time.sleep(SLEEP_BETWEEN_LLM_CALLS)
+            return out
 
     refusal_ok, faithful, correct = [], [], []
     for item, hits in zip(items, retrieved_per_q):
