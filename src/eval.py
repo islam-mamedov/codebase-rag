@@ -23,6 +23,8 @@ import time
 from pathlib import Path
 
 from retrieval import retrieve
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 DATA_DIR = Path("data")
 EVAL_SET = DATA_DIR / "eval_set.jsonl"

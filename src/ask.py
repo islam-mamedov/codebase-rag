@@ -18,8 +18,8 @@ import os
 import sys
 
 from retrieval import retrieve as retrieve_chunks
-
-REFUSAL_TEXT = "I couldn't find this in the indexed codebase."
+from dotenv import load_dotenv
+load_dotenv(override=True)
 LLM_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 TOP_K = 5
 
@@ -74,10 +74,6 @@ def main() -> None:
     args = parser.parse_args()
 
     hits = retrieve_chunks(args.question, k=args.k, mode=args.mode)
-    top_score = hits[0].get("score")
-    if top_score is not None and top_score < SCORE_THRESHOLD:
-        print(f"\n{REFUSAL_TEXT}")
-        return
     
     if args.show_chunks:
         for i, h in enumerate(hits, 1):
