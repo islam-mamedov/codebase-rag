@@ -1,18 +1,20 @@
 """Streamlit UI for the FastAPI Codebase Q&A RAG system.
 
 Run locally:
-    export GROQ_API_KEY=gsk_...
-    streamlit run app.py
+    streamlit run app.py          # reads GROQ_API_KEY from .env
 
-On Hugging Face Spaces, set GROQ_API_KEY as a Space secret.
+On Hugging Face Spaces, set GROQ_API_KEY as a Space secret. The Space has
+no prebuilt index, so ensure_index() builds it from data/chunks.jsonl on
+first boot (~3 min, cached afterwards).
 """
 
 import os
 import sys
-from dotenv import load_dotenv
-load_dotenv(override=True)
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 import streamlit as st
@@ -31,6 +33,26 @@ EXAMPLES = [
 
 st.set_page_config(page_title="FastAPI Codebase Q&A", page_icon="⚡",
                    layout="wide")
+
+
+@st.cache_resource(show_spinner="First boot: building the search index "
+                                "(~3 min, one time only)...")
+def ensure_index() -> bool:
+    """Build the Chroma index from chunks.jsonl if it doesn't exist yet."""
+    import chromadb
+    client = chromadb.PersistentClient(path="data/chroma")
+    try:
+        if client.get_collection("chunks").count() > 0:
+            return True
+    except Exception:
+        pass
+    import index  # src/index.py
+    index.main()
+    return True
+
+
+ensure_index()
+
 st.title("⚡ FastAPI Codebase Q&A")
 st.caption("Retrieval-augmented answers over FastAPI's source code, docs, "
            "and GitHub issues — every claim cited, honest refusals when "
@@ -54,8 +76,8 @@ with st.sidebar:
         "recall@5 **0.91** · MRR **0.71**\n\n"
         "faithful **0.89** · correct **0.91** · refusal **7/7**"
     )
-    # TODO: replace with your repo URL
-    st.markdown("[Source & write-up](https://github.com/YOUR_USERNAME/codebase-rag)")
+    st.markdown("[Source & write-up]"
+                "(https://github.com/Pace200413/codebase-rag)")
 
 
 @st.cache_data(show_spinner=False)
