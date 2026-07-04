@@ -47,6 +47,7 @@ Question: {question}"""
 
 # Lazy singletons so models/indexes load once per process, not per query
 _embedder = None
+_loaded = False
 _reranker = None
 _collection = None
 _bm25 = None
@@ -59,8 +60,8 @@ def _tokenize(text: str) -> list[str]:
 
 
 def _load() -> None:
-    global _embedder, _collection, _bm25, _chunk_ids, _chunk_by_id
-    if _embedder is not None:
+    global _loaded, _embedder, _collection, _bm25, _chunk_ids, _chunk_by_id
+    if _loaded:
         return
     _embedder = SentenceTransformer(EMBED_MODEL)
     _collection = chromadb.PersistentClient(
@@ -70,6 +71,7 @@ def _load() -> None:
     _chunk_ids = [c["id"] for c in chunks]
     _chunk_by_id = {c["id"]: c for c in chunks}
     _bm25 = BM25Okapi([_tokenize(c["text"]) for c in chunks])
+    _loaded = True
 
 
 def _get_reranker() -> CrossEncoder:
