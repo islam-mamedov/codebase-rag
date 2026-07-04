@@ -19,15 +19,20 @@ import sys
 
 from retrieval import retrieve as retrieve_chunks
 
+REFUSAL_TEXT = "I couldn't find this in the indexed codebase."
 LLM_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 TOP_K = 5
 
 SYSTEM_PROMPT = """\
 You are a precise assistant answering questions about the FastAPI codebase.
 Answer ONLY from the numbered context chunks provided. Rules:
-- Cite chunks inline like [1] or [2][3] after each claim they support.
-- If the context does not contain the answer, say exactly:
-  "I couldn't find this in the indexed codebase." Do not guess.
+- Cite chunks inline using square brackets like [1] or [2][3]. Never use
+  any other citation format.
+- The context chunks are search results: they may be loosely RELATED to
+  the question without actually answering it. If they do not contain the
+  answer, reply with exactly:
+  "I couldn't find this in the indexed codebase."
+  Do not answer from general knowledge. Do not guess.
 - Prefer short code examples when the context contains them.
 - Be concise."""
 
@@ -69,7 +74,11 @@ def main() -> None:
     args = parser.parse_args()
 
     hits = retrieve_chunks(args.question, k=args.k, mode=args.mode)
-
+    top_score = hits[0].get("score")
+    if top_score is not None and top_score < SCORE_THRESHOLD:
+        print(f"\n{REFUSAL_TEXT}")
+        return
+    
     if args.show_chunks:
         for i, h in enumerate(hits, 1):
             print(f"\n=== [{i}] {h['meta']['path']} :: "

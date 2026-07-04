@@ -71,7 +71,8 @@ def is_gold_hit(hit: dict, gold: list[str]) -> bool:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", default="dense",
-                        choices=["dense", "hybrid", "hybrid_rerank", "dense_rerank"])
+                            choices=["dense", "dense_rw", "dense_rerank",
+                                    "hybrid", "hybrid_rerank"])
     parser.add_argument("--answers", action="store_true",
                         help="also generate answers and run the LLM judge")
     parser.add_argument("--k", type=int, default=K)
