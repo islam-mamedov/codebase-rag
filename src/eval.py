@@ -96,47 +96,63 @@ def main() -> None:
     # -------- retrieval metrics --------
     recalls, mrrs = [], []
     retrieved_per_q = []
+
     for item in items:
         hits = retrieve(item["question"], k=args.k, mode=args.mode)
         retrieved_per_q.append(hits)
+
         if not item["answerable"]:
             continue
-        rank = next((r for r, h in enumerate(hits, 1)
-                     if is_gold_hit(h, item["gold"])), None)
+
+        rank = next(
+            (
+                position
+                for position, hit in enumerate(hits, 1)
+                if is_gold_hit(hit, item["gold"])
+            ),
+            None,
+        )
+
         recalls.append(1.0 if rank else 0.0)
         mrrs.append(1.0 / rank if rank else 0.0)
+
         if not rank:
             print(f"  [miss] {item['question']}")
 
-        if not recalls:
-            raise RuntimeError("The evaluation set contains no answerable questions.")
-
-        recall_at_k = sum(recalls) / len(recalls)
-        mrr = sum(mrrs) / len(mrrs)
-
-        print(f"\n=== Retrieval (mode={args.mode}, k={args.k}) ===")
-        print(
-            f"recall@{args.k}: {recall_at_k:.2f}  "
-            f"({int(sum(recalls))}/{len(recalls)})"
+    if not recalls:
+        raise RuntimeError(
+            "The evaluation set contains no answerable questions."
         )
-        print(f"MRR:       {mrr:.2f}")
 
-        if args.min_recall is not None:
-            if recall_at_k < args.min_recall:
-                print(
-                    f"\n[gate] FAIL: recall@{args.k}={recall_at_k:.4f} "
-                    f"is below the required {args.min_recall:.4f}"
-                )
-                raise SystemExit(1)
+    recall_at_k = sum(recalls) / len(recalls)
+    mrr = sum(mrrs) / len(mrrs)
 
+    print(f"\n=== Retrieval (mode={args.mode}, k={args.k}) ===")
+    print(
+        f"recall@{args.k}: {recall_at_k:.2f}  "
+        f"({int(sum(recalls))}/{len(recalls)})"
+    )
+    print(f"MRR:       {mrr:.2f}")
+
+    if args.min_recall is not None:
+        if recall_at_k < args.min_recall:
             print(
-                f"\n[gate] PASS: recall@{args.k}={recall_at_k:.4f} "
-                f"meets the required {args.min_recall:.4f}"
+                f"\n[gate] FAIL: recall@{args.k}={recall_at_k:.4f} "
+                f"is below the required {args.min_recall:.4f}"
             )
+            raise SystemExit(1)
 
-        if not args.answers:
-            print("\n(retrieval-only run; add --answers for generation metrics)")
-            return
+        print(
+            f"\n[gate] PASS: recall@{args.k}={recall_at_k:.4f} "
+            f"meets the required {args.min_recall:.4f}"
+        )
+
+    if not args.answers:
+        print(
+            "\n(retrieval-only run; add --answers "
+            "for generation metrics)"
+        )
+        return
 
     # -------- generation + judge metrics --------
     import os

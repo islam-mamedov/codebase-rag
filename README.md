@@ -20,6 +20,7 @@ Ask technical questions about FastAPI and receive answers grounded in its source
 [![GitHub](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/islam-mamedov/codebase-rag)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Tests and Retrieval Eval](https://github.com/islam-mamedov/codebase-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/islam-mamedov/codebase-rag/actions/workflows/ci.yml)
 
 </div>
 
