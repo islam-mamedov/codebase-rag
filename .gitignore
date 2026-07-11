@@ -1,7 +1,37 @@
-.venv/
-data/repo/
-data/issues/
-data/chroma/
-__pycache__/
-.pytest_cache/
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test and tooling cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# macOS
+.DS_Store
+
+# Generated vector database
+data/chroma/
+
+# Cloned external repository
+data/repo/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
