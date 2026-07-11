@@ -715,3 +715,10 @@ Built as an evaluation-driven AI engineering project.
 **[Try the live demo](https://huggingface.co/spaces/islam-mamedov/fastapi-codebase-qa)**
 
 </div>
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+```text
+Copyright (c) 2026 Islam Mamedov
