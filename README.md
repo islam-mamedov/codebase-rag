@@ -15,7 +15,7 @@ codebase and get answers grounded in its actual source code, documentation,
 and GitHub issues — with citations linking to the exact lines, and honest
 refusals when the corpus doesn't contain the answer.
 
-**Live demo:** https://huggingface.co/spaces/Pace200413/fastapi-codebase-qa
+**Live demo:** https://huggingface.co/spaces/islam-mamedov/fastapi-codebase-qa
 
 Every architectural decision in this project was made by measuring, not
 guessing: a hand-labeled 42-question eval set gates every change, and the
@@ -129,7 +129,7 @@ to FastAPI" from "answerable from FastAPI's corpus".
 ## Run it yourself
 
 ```bash
-git clone https://github.com/Pace200413/codebase-rag && cd codebase-rag
+git clone https://github.com/islam-mamedov/codebase-rag && cd codebase-rag
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt PyGithub tree-sitter tree-sitter-python pytest
 echo "GROQ_API_KEY=gsk_..." > .env          # free key: console.groq.com
