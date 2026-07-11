@@ -78,6 +78,12 @@ def main() -> None:
     parser.add_argument("--answers", action="store_true",
                         help="also generate answers and run the LLM judge")
     parser.add_argument("--k", type=int, default=K)
+    parser.add_argument(
+        "--min-recall",
+        type=float,
+        default=None,
+        help="Exit with code 1 when recall@k is below this threshold.",
+    )
     args = parser.parse_args()
 
     items = [json.loads(line)
@@ -102,14 +108,35 @@ def main() -> None:
         if not rank:
             print(f"  [miss] {item['question']}")
 
-    print(f"\n=== Retrieval (mode={args.mode}, k={args.k}) ===")
-    print(f"recall@{args.k}: {sum(recalls)/len(recalls):.2f}  "
-          f"({int(sum(recalls))}/{len(recalls)})")
-    print(f"MRR:       {sum(mrrs)/len(mrrs):.2f}")
+        if not recalls:
+            raise RuntimeError("The evaluation set contains no answerable questions.")
 
-    if not args.answers:
-        print("\n(retrieval-only run; add --answers for generation metrics)")
-        return
+        recall_at_k = sum(recalls) / len(recalls)
+        mrr = sum(mrrs) / len(mrrs)
+
+        print(f"\n=== Retrieval (mode={args.mode}, k={args.k}) ===")
+        print(
+            f"recall@{args.k}: {recall_at_k:.2f}  "
+            f"({int(sum(recalls))}/{len(recalls)})"
+        )
+        print(f"MRR:       {mrr:.2f}")
+
+        if args.min_recall is not None:
+            if recall_at_k < args.min_recall:
+                print(
+                    f"\n[gate] FAIL: recall@{args.k}={recall_at_k:.4f} "
+                    f"is below the required {args.min_recall:.4f}"
+                )
+                raise SystemExit(1)
+
+            print(
+                f"\n[gate] PASS: recall@{args.k}={recall_at_k:.4f} "
+                f"meets the required {args.min_recall:.4f}"
+            )
+
+        if not args.answers:
+            print("\n(retrieval-only run; add --answers for generation metrics)")
+            return
 
     # -------- generation + judge metrics --------
     import os

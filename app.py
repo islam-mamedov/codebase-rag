@@ -94,7 +94,7 @@ with st.sidebar:
     c4.metric("refusal", "7/7")
     st.divider()
     st.markdown("[💻 Source & write-up]"
-                "(https://github.com/Pace200413/codebase-rag)")
+                "(https://github.com/islam-mamedov/codebase-rag)")
     if st.button("🗑 Clear conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
