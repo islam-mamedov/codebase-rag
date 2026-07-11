@@ -22,6 +22,20 @@ Ask technical questions about FastAPI and receive answers grounded in its source
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Tests and Retrieval Eval](https://github.com/islam-mamedov/codebase-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/islam-mamedov/codebase-rag/actions/workflows/ci.yml)
 
+<br>
+
+<img
+  src="assets/codebase-rag-demo.gif"
+  alt="FastAPI Codebase Q&A retrieving evidence and generating a grounded answer"
+  width="1000"
+/>
+
+<br>
+
+<p>
+  <b>Question → Retrieval → Grounded answer → Source evidence</b>
+</p>
+
 </div>
 
 ---
