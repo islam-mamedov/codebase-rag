@@ -35,3 +35,7 @@ data/repo/
 
 # Logs
 *.log
+
+# Generated evaluation caches
+data/eval_cache.json
+data/rewrite_cache.json
